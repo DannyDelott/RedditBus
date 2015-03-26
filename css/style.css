@@ -47,7 +47,7 @@ table {
 }
 /*END RESET */
 
-#subreddit-input-container {
+#reddit-input-container {
   width: 500px;
   height: 100px;
   position: absolute;
@@ -67,7 +67,7 @@ table {
   font-family: 'Roboto Slab', serif;
 }
 
-#subreddit-input {
+#reddit-input {
   padding: 50px 10px;
   text-align: center;
   line-height: 50px;
