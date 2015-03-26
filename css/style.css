@@ -46,9 +46,8 @@ table {
   border-spacing: 0;
 }
 /*END RESET */
-
 .subreddit-input-container {
-  width: 250px;
+  width: 500px;
   height: 100px;
   position: absolute;
   top: 0;
@@ -58,7 +57,19 @@ table {
   margin: auto;
 }
 
+.input-group-lg {
+  height: 100%;
+  width: 100%;
+}
+
+#sizing-addon1 {
+  font-family: 'Roboto Slab', serif;
+}
+
 #subreddit-input {
+  padding: 50px 10px;
+  text-align: center;
+  line-height: 50px;
   font-family: 'Roboto Slab', serif;
   font-size: 18pt;
 }
