@@ -3,9 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>SubReddit Topper</title>
+  <title>Subreddit Topper</title>
 
-  <!-- Bootstrap 3.3.4-->
+  <!-- Bootstrap 3.3.4 -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
   <!-- Default Stylesheet -->
@@ -17,30 +17,35 @@
 
 <body>
 
+  <!-- Models -->
+
+  <!-- Collections -->
+
+  <!-- BEGIN HTML -->
+
+  <!-- BEGIN BACKBONE TEMPLATES -->
+
+  <!-- Subreddit Input container -->
+  <script type="text/template" id="subreddit_input_template">
+    <div id="subreddit-input-container">
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon" id="sizing-addon1">reddit.com/r/</span>
+        <input type="text" id="subreddit-input" class="form-control" placeholder="Enter a subreddit" aria-describedby="sizing-addon1">
+      </div>
+    </div>
+  </script>
+
+  <!-- END BACKBONE TEMPLATES -->
+
   <!-- Libraries -->
   <script src="lib/jquery-min.js"></script>
   <script src="lib/underscore-min.js"></script>
   <script src="lib/backbone-min.js"></script>
 
   <!-- Views -->
-  <script src="js/views/RedditInputView.js"></script>
-
-  <!-- Models -->
-
-  <!-- Collections -->
-
+  <script src="./js/views/RedditInputView.js"></script>
   <!-- App -->
-  <script src="js/main.js"></script>
-
-  <!-- BEGIN HTML -->
-
-  <!-- Subreddit Input container -->
-  <div class="subreddit-input-container">
-    <div class="input-group input-group-lg">
-      <span class="input-group-addon" id="sizing-addon1">reddit.com/r/</span>
-      <input type="text" id="subreddit-input" class="form-control" placeholder="Enter a subreddit" aria-describedby="sizing-addon1">
-    </div>
-  </div>
+  <script src="./js/main.js"></script>
 
 </body>
 
