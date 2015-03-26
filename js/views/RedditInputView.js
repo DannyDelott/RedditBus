@@ -1,8 +1,6 @@
 window.RedditInputView = Backbone.View.extend( {
 
-  el: $( '<div>', {
-    id: 'reddit-input-container'
-  } ),
+  el: $( '#content' ),
 
   template: _.template( $( '#reddit-input-template' ).html() ),
 
@@ -11,6 +9,6 @@ window.RedditInputView = Backbone.View.extend( {
   },
 
   render: function() {
-    this.$el.html( this.template ).prependTo( document.body );
+    this.$el.html( this.$el.html() + this.template() ).fadeIn('slow');
   }
 } );

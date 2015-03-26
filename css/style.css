@@ -47,6 +47,24 @@ table {
 }
 /*END RESET */
 
+h1 {
+  font-size:28pt;
+  font-family:'Roboto Slab', serif;
+  text-align: center;
+}
+
+#content {
+  width: 600px;
+  height: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display:none;
+}
+
 #reddit-input-container {
   width: 500px;
   height: 100px;

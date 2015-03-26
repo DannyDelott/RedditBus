@@ -1,6 +1,14 @@
-window.LogoView = Backbone.View.extend({
+window.LogoView = Backbone.View.extend( {
 
-  render: function(){
-    return this.$el.html();
+  el: $( '#content' ),
+
+  template: _.template( $( '#logo-template' ).html() ),
+
+  initialize: function() {
+    this.render();
+  },
+
+  render: function() {
+    this.$el.html( this.template() );
   }
-});
+} );

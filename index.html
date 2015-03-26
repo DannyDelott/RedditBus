@@ -17,13 +17,16 @@
 
 <body>
 
-  <!-- Models -->
-
-  <!-- Collections -->
-
-  <!-- BEGIN HTML -->
+  <div id="content"></div>
 
   <!-- BEGIN BACKBONE TEMPLATES -->
+
+  <!-- Logo -->
+  <script type="text/template" id="logo-template">
+    <div id="logo">
+      <h1>Subreddit Topper</h1>
+    </div>
+  </script>
 
   <!-- Subreddit Input container -->
   <script type="text/template" id="reddit-input-template">
@@ -43,6 +46,7 @@
   <script src="lib/backbone-min.js"></script>
 
   <!-- Views -->
+  <script src="./js/views/LogoView.js"></script>
   <script src="./js/views/RedditInputView.js"></script>
   <!-- App -->
   <script src="./js/main.js"></script>
