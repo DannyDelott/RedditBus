@@ -1,1 +1,3 @@
-new RedditInputView().$el.appendTo('body');
+
+// Instantiate the subreddit input view
+var inputView = new RedditInputView();
