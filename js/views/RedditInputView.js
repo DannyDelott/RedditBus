@@ -4,6 +4,7 @@ window.RedditInputView = Backbone.View.extend( {
 
   template: _.template( $( '#reddit-input-template' ).html() ),
 
+  //jQuery events
   events: {
     'keydown': 'keyAction'
   },
@@ -13,7 +14,7 @@ window.RedditInputView = Backbone.View.extend( {
   },
 
   render: function() {
-    this.$el.html( this.$el.html() + this.template() ).fadeIn( 'slow' );
+    this.$el.html( this.$el.html() + this.template() );
   },
 
   keyAction: function( e ) {
