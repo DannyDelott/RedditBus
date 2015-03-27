@@ -1,4 +1,15 @@
+/* ********
+ * MODELS *
+ * ********/
 
-// Instantiate the subreddit input view
+var subreddit = new Subreddit();
+
+/* *******
+ * VIEWS *
+ * *******/
+
 var logoView = new LogoView();
-var inputView = new RedditInputView();
+
+var inputView = new RedditInputView( {
+  model: subredditModel
+} );
