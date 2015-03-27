@@ -4,11 +4,26 @@ window.RedditInputView = Backbone.View.extend( {
 
   template: _.template( $( '#reddit-input-template' ).html() ),
 
+  events: {
+    'keydown': 'keyAction'
+  },
+
   initialize: function() {
     this.render();
   },
 
   render: function() {
-    this.$el.html( this.$el.html() + this.template() ).fadeIn('slow');
+    this.$el.html( this.$el.html() + this.template() ).fadeIn( 'slow' );
+  },
+
+  keyAction: function( e ) {
+    var code = e.keyCode || e.which;
+    if ( code === 13 ) {
+
+      // TODO:
+      // Trigger model to query API
+      console.log('trigger model to query API');
+
+    }
   }
 } );
