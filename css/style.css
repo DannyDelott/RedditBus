@@ -53,6 +53,15 @@ h1 {
   text-align: center;
 }
 
+h4 {
+  font-family:'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+.credit {
+  font-weight:400;
+}
+
 #content {
   width: 600px;
   height: 300px;
@@ -66,7 +75,7 @@ h1 {
 }
 
 #reddit-input-container {
-  width: 500px;
+  width: 80%;
   height: 100px;
   position: absolute;
   top: 0;
@@ -74,6 +83,17 @@ h1 {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+#credits-container{
+  width:100%;
+  position: absolute;
+  top: 90%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
 }
 
 .input-group-lg {
