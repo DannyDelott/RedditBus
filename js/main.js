@@ -11,5 +11,7 @@ var subreddit = new Subreddit();
 var logoView = new LogoView();
 
 var inputView = new RedditInputView( {
-  model: subredditModel
+  model: subreddit
 } );
+
+var creditsView = new CreditsView();
