@@ -15,9 +15,44 @@
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> -->
+
+  <script src="http://j.mp/jqymin"></script>
+
 </head>
 
 <body>
+
+  <div id="reddit-content">
+  </div>
+
+  <script>
+  $.getJSON(
+      "http://www.reddit.com/r/videos/top.json?sort=top&t=all",
+      function foo(data) {
+        $.each(
+          data.data.children,
+          function(i, post) {
+            $("#reddit-content").append('<br>' + post.data.title);
+            $("#reddit-content").append('<br>' + post.data.url);
+            $("#reddit-content").append('<br>' + post.data.permalink);
+            $("#reddit-content").append('<br>' + post.data.ups);
+            $("#reddit-content").append('<br>' + post.data.downs);
+            $("#reddit-content").append('<br>' + new Date(post.data.created_utc * 1000));
+            $("#reddit-content").append('<hr>');
+          }
+        )
+      }
+    )
+    .success(function() {
+      console.log("second success");
+    })
+    .error(function() {
+      alert("error");
+    })
+    .complete(function() {
+      console.log("complete");
+    });
+  </script>
 
   <!-- BEGIN BACKBONE TEMPLATES -->
 
