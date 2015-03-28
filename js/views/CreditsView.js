@@ -1,7 +1,5 @@
 window.CreditsView = Backbone.View.extend( {
 
-  el: $( '#content' ),
-
   template: _.template( $( '#credits-template' ).html() ),
 
   initialize: function() {

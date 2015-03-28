@@ -1,7 +1,5 @@
 window.RedditInputView = Backbone.View.extend( {
 
-  el: $( '#content' ),
-
   template: _.template( $( '#reddit-input-template' ).html() ),
 
   //jQuery events
@@ -23,7 +21,7 @@ window.RedditInputView = Backbone.View.extend( {
 
       // TODO:
       // Trigger model to query API
-      console.log('trigger model to query API');
+      console.log( this.model.get( 'subreddit' ) );
 
     }
   }
