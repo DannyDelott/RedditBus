@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
   <!-- Default Stylesheet -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
 
   <!-- Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,300' rel='stylesheet' type='text/css'>
@@ -18,8 +18,6 @@
 </head>
 
 <body>
-
-  <div id="content"></div>
 
   <!-- BEGIN BACKBONE TEMPLATES -->
 
@@ -46,17 +44,19 @@
       <h4>Created by <a href="https://github.com/DannyDelott" class="credit">Danny Delott</a></h4>
     </div>
   </script>
+
   <!-- END BACKBONE TEMPLATES -->
 
   <!-- Libraries -->
-  <script src="lib/jquery-min.js"></script>
-  <script src="lib/underscore-min.js"></script>
-  <script src="lib/backbone-min.js"></script>
+  <script src="./lib/jquery-min.js"></script>
+  <script src="./lib/underscore-min.js"></script>
+  <script src="./lib/backbone-min.js"></script>
 
   <!-- Models -->
   <script src="./js/models/Subreddit.js"></script>
 
   <!-- Views -->
+  <script src="./js/views/CenterBoxView.js"></script>
   <script src="./js/views/LogoView.js"></script>
   <script src="./js/views/RedditInputView.js"></script>
   <script src="./js/views/CreditsView.js"></script>
