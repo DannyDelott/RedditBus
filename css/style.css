@@ -62,7 +62,7 @@ h4 {
   font-weight:400;
 }
 
-#content {
+#center-box {
   width: 600px;
   height: 300px;
   position: absolute;
@@ -71,8 +71,9 @@ h4 {
   left: 0;
   right: 0;
   margin: auto;
-  display:none;
+  display: none;
 }
+
 
 #reddit-input-container {
   width: 80%;
