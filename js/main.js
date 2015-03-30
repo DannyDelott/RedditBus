@@ -9,3 +9,9 @@ var subreddit = new Subreddit();
  * *******/
 
 var centerBoxView = new CenterBoxView();
+
+/* ********
+ * ROUTER *
+ * ********/
+
+ var routes = new AppRouter();

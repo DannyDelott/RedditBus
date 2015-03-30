@@ -29,6 +29,7 @@
   $.getJSON(
       "http://www.reddit.com/r/videos/top.json?sort=top&t=all",
       function foo(data) {
+        $("#reddit-content").append('<br>NUM POSTS: ' + data.data.children.length);
         $.each(
           data.data.children,
           function(i, post) {
@@ -95,7 +96,9 @@
   <script src="./js/views/LogoView.js"></script>
   <script src="./js/views/RedditInputView.js"></script>
   <script src="./js/views/CreditsView.js"></script>
+
   <!-- App -->
+  <script src="./js/AppRouter.js"></script>
   <script src="./js/main.js"></script>
 
 </body>
