@@ -6,4 +6,5 @@ Get the optimal time and day to submit to a given subreddit.
 - Bootstrap.css
 - D3.js
 - Backbone.js
-- Firebase Backend Service
+- Node.js
+- Express
