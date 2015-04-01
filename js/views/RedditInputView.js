@@ -1,6 +1,6 @@
 window.RedditInputView = Backbone.View.extend( {
 
-  template: _.template( $( '#reddit-input-template' ).html() ),
+  template: 'partials/subreddit-input.html',
 
   //jQuery events
   events: {
@@ -12,7 +12,7 @@ window.RedditInputView = Backbone.View.extend( {
   },
 
   render: function() {
-    this.$el.html( this.$el.html() + this.template() );
+    this.$el.load(this.template).html();
   },
 
   keyAction: function( e ) {
