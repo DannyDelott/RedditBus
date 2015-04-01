@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/DannyDelott/RedditBus/issues"
   },
-  "homepage": "https://github.com/DannyDelott/RedditBus"
+  "homepage": "https://github.com/DannyDelott/RedditBus",
+  "dependencies": {
+    "express": "^4.12.3"
+  }
 }
