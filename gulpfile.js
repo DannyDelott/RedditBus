@@ -16,10 +16,10 @@ var path = {};
 path.APP_DIR = './client/js/';
 path.APP = [
   path.APP_DIR + 'models/Subreddit.js',
-  path.APP_DIR + 'views/CenterBoxView.js',
   path.APP_DIR + 'views/LogoView.js',
   path.APP_DIR + 'views/RedditInputView.js',
   path.APP_DIR + 'views/CreditsView.js',
+  path.APP_DIR + 'views/CenterBoxView.js',
   path.APP_DIR + 'AppRouter.js',
   path.APP_DIR + 'app.js'
 ];
