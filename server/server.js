@@ -24,6 +24,14 @@ app.get('/', function(req, res) {
   res.sendFile('index.html');
 });
 
+app.get('/dist/app.min.js', function(req, res){
+  res.sendFile('/dist/app.min.js');
+});
+
+app.get('/dist/lib.min.js', function(req, res){
+  res.sendFile('/dist/lib.min.js');
+});
+
 /* ******************
  * Start the server *
  * ******************/
