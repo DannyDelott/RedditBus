@@ -28,9 +28,10 @@ app.get('/', function(req, res) {
  * Start the server *
  * ******************/
 
-var server = app.listen(3000, function() {
-  var host = server.address().address;
-  var port = server.address().port;
+var port = process.env.PORT || 3000;
+
+var server = app.listen(port, function() {
+  //var host = server.address().address;
 
   console.log('Listening on port:', port);
 });
