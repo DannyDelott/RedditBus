@@ -25,7 +25,7 @@ path.APP = [
 ];
 
 // 3rd party libraries
-path.LIBS_DIR = './client/lib/';
+path.LIBS_DIR = 'client/lib/';
 path.LIBS = [
   path.LIBS_DIR + 'underscore-min.js',
   path.LIBS_DIR + 'jquery-min.js',
@@ -33,9 +33,9 @@ path.LIBS = [
 ];
 
 // Distribution assets
-path.CLIENT_DIST = './client/dist/';
-path.APP_MIN = path.CLIENT_DIST + 'app.min.js';
-path.LIBS_MIN = path.CLIENT_DIST + 'lib.min.js';
+path.CLIENT_DIST = 'client/dist/';
+path.APP_MIN = 'app.min.js';
+path.LIBS_MIN = 'lib.min.js';
 
 /* **************************************************
  * UGLIFY AND CONCATENATE task compresses JavaScript
