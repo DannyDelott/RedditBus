@@ -1,4 +1,4 @@
-window.Subreddit = Backbone.Model.extend( {
+window.Subreddit = Backbone.Model.extend({
 
   defaults: {
     subreddit: 'explainlikeimfive',
@@ -12,7 +12,7 @@ window.Subreddit = Backbone.Model.extend( {
 
   initialize: function() {
 
-    console.log( 'subreddit model' );
+    console.log('subreddit model');
   }
 
-} );
+});
