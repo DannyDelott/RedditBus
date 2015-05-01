@@ -1,4 +1,4 @@
-window.RedditInputView = Backbone.View.extend( {
+window.RedditInputView = Backbone.View.extend({
 
   template: 'partials/subreddit-input.html',
 
@@ -15,14 +15,13 @@ window.RedditInputView = Backbone.View.extend( {
     this.$el.load(this.template).html();
   },
 
-  keyAction: function( e ) {
+  keyAction: function(e) {
     var code = e.keyCode || e.which;
-    if ( code === 13 ) {
+    if(code === 13) {
 
-      // TODO:
       // Trigger model to query API
-      console.log( this.model.get( 'subreddit' ) );
+      console.log(this.model.get('subreddit'));
 
     }
   }
-} );
+});

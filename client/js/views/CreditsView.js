@@ -1,13 +1,13 @@
-window.CreditsView = Backbone.View.extend( {
+window.CreditsView = Backbone.View.extend({
 
-  template: _.template( $( '#credits-template' ).html() ),
+  template: 'partials/credits.html',
 
   initialize: function() {
     this.render();
   },
 
   render: function() {
-    this.$el.html( this.$el.html() + this.template() ).fadeIn( 'slow' );
+    this.$el.load(this.template).html();
   }
 
-} );
+});
