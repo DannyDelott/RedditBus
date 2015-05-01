@@ -1,9 +1,3 @@
-/* ********
- * MODELS *
- * ********/
-
-var subreddit = new Subreddit();
-
 /* *******
  * VIEWS *
  * *******/
